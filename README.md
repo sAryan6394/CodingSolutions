@@ -19,12 +19,8 @@
 ```
 coding-solutions/
 ├── leetcode/
-│   ├── easy/
-│   ├── medium/
-│   └── hard/
 ├── hackerrank/
-├── codechef/
-└── gfg/
+└── DataLemur/
 ```
 
 ---
