@@ -19,8 +19,7 @@
 ```
 coding-solutions/
 ├── leetcode/
-├── hackerrank/
-└── DataLemur/
+└── hackerrank/
 ```
 
 ---
