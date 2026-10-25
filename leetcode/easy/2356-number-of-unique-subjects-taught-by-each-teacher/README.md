@@ -66,17 +66,17 @@ Teacher 2:
 
 ## Solution
 
-**Language:** Python  
-**Runtime:** 284 ms (beats 64.54%)  
-**Memory:** 67.1 MB (beats 97.99%)  
-**Submitted:** 2026-10-21T14:17:17.057Z  
+**Language:** SQL  
+**Runtime:** 737 ms (beats 10.28%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-10-25T19:32:21.706Z  
 
-```py
-import pandas as pd
-
-def count_unique_subjects(teacher: pd.DataFrame) -> pd.DataFrame:
-    result = teacher.groupby('teacher_id')['subject_id'].nunique().reset_index()
-    return result.rename(columns={'subject_id': 'cnt'})
+```sql
+SELECT 
+    teacher_id,
+    COUNT(DISTINCT subject_id) AS cnt
+FROM Teacher
+GROUP BY teacher_id;
 ```
 
 ---
