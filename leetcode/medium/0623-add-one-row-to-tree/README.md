@@ -46,9 +46,9 @@ Output: [4,2,null,1,1,3,null,null,1]
 ## Solution
 
 **Language:** Python  
-**Runtime:** 2 ms (beats 39.20%)  
-**Memory:** 20.2 MB (beats 89.29%)  
-**Submitted:** 2026-10-28T10:26:36.791Z  
+**Runtime:** 0 ms  
+**Memory:** 19.3 MB  
+**Submitted:** 2026-10-28T10:27:06.558Z  
 
 ```py
 # Definition for a binary tree node.
