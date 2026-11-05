@@ -62,17 +62,16 @@ Explanation:
 
 ## Solution
 
-**Language:** Python  
-**Runtime:** 350 ms (beats 5.09%)  
-**Memory:** 66.9 MB (beats 99.17%)  
-**Submitted:** 2026-10-27T10:46:41.725Z  
+**Language:** SQL  
+**Runtime:** 1034 ms (beats 5.03%)  
+**Memory:** 0B (beats 100.00%)  
+**Submitted:** 2026-11-05T16:50:37.326Z  
 
-```py
-import pandas as pd
-
-def find_classes(courses: pd.DataFrame) -> pd.DataFrame:
-    df = courses.groupby('class')['student'].count().reset_index()
-    return df[df['student'] >= 5][['class']]
+```sql
+SELECT class
+FROM Courses
+GROUP BY class
+HAVING COUNT(student) >= 5;
 ```
 
 ---
